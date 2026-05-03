@@ -1,10 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>My GitHub Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Developed Products</title>
+    <meta name="description" content="A showcase of premium software applications developed by me.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
-  <h1>Hello, world!</h1>
-  <p>Welcome to my site hosted on GitHub Pages.</p>
+    <div class="background-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i data-lucide="code-2"></i>
+                Dev K's portfolio
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="https://karthikeyan-t.web.app/">about Developer</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content fade-in">
+                <div class="badge">Innovation & Design</div>
+                <h1 class="hero-title">Crafting <span>Digital</span> Experiences</h1>
+                <p class="hero-subtitle">Explore a collection of high-performance, aesthetically pleasing, and robust
+                    applications tailored for modern needs.</p>
+                <div class="hero-actions">
+                    <a href="#products" class="btn btn-primary">View Products</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products-section">
+            <div class="section-header fade-in">
+                <h2>Featured Products</h2>
+                <p>Discover my latest projects across mobile and web platforms.</p>
+            </div>
+
+            <div class="products-grid" style="grid-template-columns: 1fr; max-width: 800px; margin: 0 auto;">
+                <!-- Product 3 -->
+                <div class="product-card fade-in">
+                    <div class="card-image-wrapper">
+                        <img src="assets/finance.png" alt="Money Manager Finance App" class="product-image">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-tags">
+                            <span class="tag tag-web">Web</span>
+                            <span class="tag tag-android">Android</span>
+                            <span class="tag tag-compose">Jetpack Compose</span>
+                        </div>
+                        <h3 class="product-title">Money Manager (Finance Tracker)</h3>
+                        <p class="product-desc">A clean double-entry dashboard for daily cash flow, budgets, cards, and
+                            account balances. Real-time sync and smart categorizations.</p>
+                        <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                            <a href="https://money2manager.web.app/" class="btn btn-primary"
+                                style="padding: 0.6rem 1.2rem; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <i data-lucide="globe" style="width: 16px; height: 16px;"></i> Visit Website
+                            </a>
+                            <a href="https://github.com/shadowchoco/shadowchoco.github.io/blob/main/money2manager.apk"
+                                class="btn btn-secondary"
+                                style="padding: 0.6rem 1.2rem; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <i data-lucide="download" style="width: 16px; height: 16px;"></i> Download App
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section fade-in">
+            <div class="contact-card">
+                <h2>Let's work together</h2>
+                <p>Interested in my work or have a project in mind?</p>
+                <a href="mailto:hello@example.com" class="btn btn-primary">Say Hello</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 DevPortfolio. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i data-lucide="github"></i></a>
+                <a href="#"><i data-lucide="linkedin"></i></a>
+                <a href="#"><i data-lucide="twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
